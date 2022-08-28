@@ -1,0 +1,168 @@
+@charset "UTF-8";
+.hero-div {
+  background-image: url(../images/hero-löpande-man.jpg);
+  height: 230px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: -100;
+  -webkit-filter: grayscale(30%);
+          filter: grayscale(30%);
+}
+
+.hero-div .hero-text {
+  font-family: "Teko", sans-serif;
+  font-size: 45px;
+  color: white;
+  padding: 5px;
+  text-align: right;
+}
+
+@media (min-width: 550px) {
+  .hero-div .hero-text {
+    font-size: 120px;
+    padding: 100px 50px;
+    text-align: right;
+  }
+  .hero-div .hero-text .hero-text {
+    color: white;
+  }
+  .hero-div .hero-text span {
+    text-align: left;
+    margin-bottom: -120px;
+  }
+  .hero-div .hero-text .hide {
+    display: none;
+  }
+}
+
+.hero-div .hero-text span {
+  display: block;
+  color: black;
+  text-align: left;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.category-header {
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 40px auto;
+  padding-bottom: 20px;
+  border-bottom: 5px solid #89a3b3;
+  max-width: 270px;
+}
+
+.category-div-container .category {
+  border-radius: 20px;
+}
+
+.category-div-container .category-title {
+  padding: 30px;
+  font-size: 2rem;
+}
+
+.category-div-container a {
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.category-div-container a p {
+  display: none;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.category-div-container a:hover p {
+  display: block;
+}
+
+.category-div-container a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.category-div-container #damsko-category {
+  background-image: url(../images/kategori-damskor.jpg);
+  height: 380px;
+  background-size: cover;
+  background-position: center center;
+  margin: 20px;
+}
+
+.category-div-container #herrsko-category {
+  background-image: url(../images/kategori-herrskor.jpg);
+  height: 380px;
+  background-size: cover;
+  background-position: center center;
+  margin: 20px;
+}
+
+.category-div-container #barnsko-category {
+  background-image: url(../images/kategori-barnskor.jpg);
+  height: 380px;
+  background-size: cover;
+  background-position: center center;
+  margin: 20px;
+}
+
+.rea-aside {
+  margin-top: 50px;
+  background: #d1eeff;
+  padding: 30px;
+}
+
+.rea-aside .aside-container {
+  max-width: 600px;
+}
+
+.rea-aside .aside-container .aside-title {
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+}
+
+.rea-aside .aside-container .aside-text {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.rea-aside .aside-img {
+  background-image: url(../images/reklam-knyta-sko.jpg);
+  height: 380px;
+  background-size: cover;
+  background-position: center center;
+  margin: 20px;
+  height: 150px;
+}
+
+@media (min-width: 550px) {
+  .category-div-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .category-div-container .category {
+    width: 350px;
+  }
+  .rea-aside {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .rea-aside .aside-img {
+    height: 400px;
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=indexstyle.css.map */

@@ -1,0 +1,185 @@
+{
+    "products": [{
+        "category": "dam",
+        "items": [
+            {
+                "id": "1",
+                "name": "Puma",
+                "description": "Orangea sneakers med blomdetalhjer.",
+                "image": "../images/dam/damskor_svarta_puma.jpg",
+                "price": "899",
+                "category": "DAM",
+                "alt": "bild på svarta sneakers från Puma"
+            },
+            {
+                "id": "2",
+                "name": "Adidas",
+                "description": "Vita löparskor med mintgrön detalj.",
+                "image": "../images/dam/damskor_vit_adidas.jpg",
+                "price": "699",
+                "category": "DAM",
+                "alt": "Bild på vita sneakers från Adidas"
+            },
+            {
+                "id": "3",
+                "name": "Converse",
+                "description": "Höga sneakers med blommigt tyg.",
+                "image": "../images/dam/damskor_vita_converse.jpg",
+                "price": "799",
+                "category": "DAM",
+                "alt": "Bild på vita sneakers från Converse"
+            },
+            {
+                "id": "4",
+                "name": "Fila",
+                "description": "Klassiska tennisskor, vit och blå.",
+                "image": "../images/dam/damskor_vita_reebok.jpg",
+                "price": "949",
+                "category": "DAM",
+                "alt": "Bild på Vita sneakers från Fila"
+            },
+            {
+                "id": "5",
+                "name": "New Balance",
+                "description": "Gul och blå mocca sneakers.",
+                "image": "../images/dam/damskor_vita_nb.jpg",
+                "price": "999",
+                "category": "DAM",
+                "alt": "Bild på vita sneakers från New Balance"
+            },
+            {
+                "id": "6",
+                "name": "Nike",
+                "description": "Sneakers med högre sula med färgglada detaljer.",
+                "image": "../images/dam/damskor_vita_nike.jpg",
+                "price": "849",
+                "category": "DAM",
+                "alt": "Bild på färgglada sneakers från Nike"
+            }
+
+        ]
+        },
+        {   "category": "herr",
+            "items": [
+                {
+                    "id": "7",
+                    "name": "Puma",
+                    "description": "Blå vita mocca sneakers med läder detaljer.",
+                    "image": "../images/herr/herrskor_blue_puma.jpg",
+                    "price": "899",
+                    "category": "HERR",
+                    "alt": "Bild på blå sneakers från Puma"
+                },
+                {
+                    "id": "8",
+                    "name": "Vans",
+                    "description": "Grön vita mocca sneakers med läder detaljer.",
+                    "image": "../images/herr/herrskor_vans.jpg",
+                    "price": "699",
+                    "category": "HERR",
+                    "alt": "Bild på färgglada sneakers från Vans"
+                },
+                {
+                    "id": "9",
+                    "name": "Adidas",
+                    "description": "Vita basketskor med guldlogga och röd kant.",
+                    "image": "../images/herr/herrskor_vita_adidas.jpg",
+                    "price": "799",
+                    "category": "HERR",
+                    "alt": "Bild på vita sneakers från Adidas"
+                },
+                {
+                    "id": "10",
+                    "name": "Converse",
+                    "description": "Färglada tygskor med högt skaft.",
+                    "image": "../images/herr/herrskor_vita_converse.jpg",
+                    "price": "949",
+                    "category": "HERR",
+                    "alt": "bild på färgglada sneakers från Converse"
+                },
+                {
+                    "id": "11",
+                    "name": "New Balance",
+                    "description": "Grön blåa sneakers med specialsula.",
+                    "image": "../images/herr/herrskor_vita_nb.jpg",
+                    "price": "999",
+                    "category": "HERR",
+                    "alt": "Bild på gröna sneakers från New Balance"
+                },
+                {
+                    "id": "12",
+                    "name": "Reebok",
+                    "description": "Läder sneakers i hög modell. Fodrade för vinter.",
+                    "image": "../images/herr/herrskor_vita_reebok.jpg",
+                    "price": "849",
+                    "category": "HERR",
+                    "alt": "Bild på bruna sneakers från Reebok"
+                }
+    
+            ]
+        },
+        {
+            "category": "barn",
+            "items": [
+                {
+                    "id": "13",
+                    "name": "Adidas",
+                    "description": "Blåa sneakers med gula och röda detaljer.",
+                    "image": "../images/barn/adidas_kids.jpeg",
+                    "price": "399",
+                    "category": "BARN",
+                    "alt": "Bild på färgglada sneakers från Adidas"
+                },
+                {
+                    "id": "14",
+                    "name": "Adidas",
+                    "description": "Färgglad tyg sneakers med smart snörning.",
+                    "image": "../images/barn/adidas_LEGO.jpeg",
+                    "price": "499",
+                    "category": "BARN",
+                    "alt": "Bild på färgglada sneakers från Adidas"
+                },
+                {
+                    "id": "15",
+                    "name": "Converse",
+                    "description": "Svarta, höga sneakers med röda och blå detaljer.",
+                    "image": "../images/barn/converse_kids.jpeg",
+                    "price": "299",
+                    "category": "BARN",
+                    "alt": "Bild på blå sneakers från Converse"
+                },
+                {
+                    "id": "16",
+                    "name": "Jordan",
+                    "description": "Gråa basketskor med specialsula.",
+                    "image": "../images/barn/Jordan_kids.jpeg",
+                    "price": "399",
+                    "category": "BARN",
+                    "alt": "Bild på svarta sneakers från Jordan"
+                },
+                {
+                    "id": "17",
+                    "name": "Nike",
+                    "description": "Sneakers i rosa, svart och vitt läder.",
+                    "image": "../images/barn/nike_kids.jpeg",
+                    "price": "349",
+                    "category": "BARN",
+                    "alt": "Bild på färgglada sneakers från Nike"
+                },
+                {
+                    "id": "18",
+                    "name": "Adidas",
+                    "description": "Gula sneakers med svarta och vita detaljer.",
+                    "image": "../images/barn/adidass_kids.jpeg",
+                    "price": "399",
+                    "category": "BARN",
+                    "alt": "Bild på färgglada sneakers från Adidas"
+                }
+
+                
+            ]
+        }
+
+    ]
+        
+}

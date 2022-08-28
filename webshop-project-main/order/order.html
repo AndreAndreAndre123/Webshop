@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="./styles/order-style.css" />
+    <link rel="stylesheet" href="../styles/components/components.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+    />
+    <title>PSAR - Beställa</title>
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <a href="../index.html"
+          ><img class="logo" src="../images/Logo- PSAR.svg" width="150" alt=""
+        /></a>
+      </div>
+      <nav class="hidden nav-links">
+        <ul>
+          <li>
+            <a href="../product-list/product-list.html?category=dam">DAM</a>
+          </li>
+          <li>
+            <a href="../product-list/product-list.html?category=herr">HERR</a>
+          </li>
+          <li>
+            <a href="../product-list/product-list.html?category=barn">BARN</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <ul class="hidden log-in">
+          <li>
+            <a href="../shopping-cart/shopping-cart.html"
+              ><i class="cart fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+          <li id="user-name" class="hidden">
+            <a href="../profile/profile.html"></a>
+          </li>
+          <li id="log-in-link" class="hidden">
+            <a href="../login/login.html">Logga in</a>
+          </li>
+          <li id="register-link">
+            <a href="../login/logincreate.html">Registrera</a>
+          </li>
+          <li class="hidden">
+            <input
+              type="button"
+              class="logout-button-desktop"
+              value="Logga ut"
+              id="logout-btn"
+            />
+          </li>
+        </ul>
+        <!--Dropdown menu börjar här-->
+        <div class="menu-hamburger">
+          <ul>
+            <li>
+              <a
+                class="menu-item"
+                href="../product-list/product-list.html?category=dam"
+                >DAM</a
+              >
+            </li>
+            <li>
+              <a
+                class="menu-item"
+                href="../product-list/product-list.html?category=herr"
+                >HERR</a
+              >
+            </li>
+            <li>
+              <a
+                class="menu-item"
+                href="../product-list/product-list.html?category=barn"
+                >BARN</a
+              >
+            </li>
+          </ul>
+          <div id="mobile-user-row">
+            <a
+              href="../login/login.html"
+              class="nav-btn login-button"
+              id="mobile-login-link"
+              >Logga in</a
+            >
+            <a
+              href="../login/logincreate.html"
+              class="nav-btn register-button"
+              id="mobile-register-link"
+              >Registrera dig</a
+            >
+            <a href="../profile/profile.html" id="mobile-profile-link"
+              >Profile</a
+            >
+            <input
+              type="button"
+              class="nav-btn logout-button"
+              value="Logga ut"
+              id="mobile-logout-btn"
+            />
+          </div>
+        </div>
+        <div class="navigation-icons">
+          <a href="../shopping-cart/shopping-cart.html"
+            ><i class="cart fa-solid fa-cart-shopping"></i
+          ></a>
+          <button class="hamburger">
+            <i class="menu-icon fa-solid fa-bars"></i>
+            <i class="close-icon fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <!--Dropdown slutar här-->
+      </div>
+    </header>
+    <main class="index-main order-main">
+      <h1 id="h1">Beställ</h1>
+      <div class="order-description-grp" id="order-description-grp">
+        <div class="order-form-wrapper" id="order-form-wrapper">
+          <form id="order-form" class="form-style order-form">
+            <h2>Fyll i dina uppgifter</h2>
+            <ul>
+              <li>
+                <div class="input-wrapper">
+                  <label for="input-customer-forename">Förnamn*</label>
+                  <input
+                    id="input-customer-forename"
+                    name="input-customer-forename"
+                    class="input-field order-input"
+                    type="text"
+                    required
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="input-wrapper">
+                  <label for="input-customer-lastname">Efteramn*</label>
+                  <input
+                    id="input-customer-lastname"
+                    name="input-customer-lastname"
+                    class="input-field order-input"
+                    type="text"
+                    required
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="input-wrapper">
+                  <label for="input-customer-adress">Adress*</label>
+                  <input
+                    id="input-customer-adress"
+                    name="input-customer-adress"
+                    class="input-field order-input"
+                    type="text"
+                    required
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="input-wrapper">
+                  <label for="input-customer-zipcode">Postnummer*</label>
+                  <input
+                    id="input-customer-zipcode"
+                    name="input-customer-zipcode"
+                    class="input-field order-input"
+                    type="text"
+                    required
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="input-wrapper">
+                  <label for="input-customer-city">Ort*</label>
+                  <input
+                    id="input-customer-city"
+                    name="input-customer-city"
+                    class="input-field order-input"
+                    type="text"
+                    required
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="input-wrapper">
+                  <label for="input-customer-email">Epost*</label>
+                  <input
+                    id="input-customer-email"
+                    name="input-customer-email"
+                    class="input-field order-input"
+                    type="email"
+                    required
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="input-wrapper">
+                  <label for="input-customer-telephone">Telefonnummer</label>
+                  <input
+                    id="input-customer-telephone"
+                    name="input-customer-telephone"
+                    class="input-field order-input"
+                    type="tel"
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="input-wrapper">
+                  <label for="input-customer-card">Kortnummer*</label>
+                  <input
+                    id="input-customer-card"
+                    name="input-customer-card"
+                    class="input-field order-input"
+                    type="tel"
+                    placeholder="xxxx-xxxx-xxxx-xxxx"
+                    min="0"
+                    max="16"
+                    required
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="input-wrapper">
+                  <label for="input-customer-textinput"
+                    >Övriga kommentarer</label
+                  >
+                  <textarea
+                    name="input-customer-textinput"
+                    id="input-customer-textinput"
+                    class="order-textarea"
+                    cols="30"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </li>
+              <li>
+                <div class="error-box hidden">
+                  <span id="error-message"></span>
+                </div>
+              </li>
+            </ul>
+          </form>
+          <div class="summary-wrapper">
+            <h2>Sammanfattning</h2>
+            <div
+              class="product-list-descriptions"
+              id="product-list-descriptions"
+            ></div>
+          </div>
+        </div>
+        <div class="price-button-row" id="price-button-row">
+          <div class="price-and-btn-wrapper">
+            <span class="total-price-display" id="total-price-display"></span>
+            <input
+              type="button"
+              class="round-button lightgreen order-button"
+              id="send-order-btn"
+              value="Beställ"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="receipt-and-total-wrapper">
+        <div class="receipt-wrapper" id="receipt-wrapper"></div>
+        <div class="price-and-btn-wrapper">
+          <span
+            class="total-price-display"
+            id="receipt-total-price-display"
+          ></span>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="social-media-icons">
+        <a><i class="fa-brands fa-youtube"></i></a>
+        <a><i class="fa-brands fa-twitter"></i></a>
+        <a><i class="fa-brands fa-instagram"></i></a>
+        <a><i class="fa-brands fa-facebook"></i></a>
+      </div>
+      <div class="footer-links">
+        <div class="footer-link-wrapper">
+          <h3>about</h3>
+          <ul>
+            <li>Link</li>
+            <li>Link</li>
+            <li>Link</li>
+          </ul>
+        </div>
+        <div class="footer-link-wrapper">
+          <h3>about</h3>
+          <ul>
+            <li>Link</li>
+            <li>Link</li>
+            <li>Link</li>
+          </ul>
+        </div>
+        <div class="footer-link-wrapper">
+          <h3>about</h3>
+          <ul>
+            <li>Link</li>
+            <li>Link</li>
+            <li>Link</li>
+          </ul>
+        </div>
+      </div>
+      <p>© 2022 PSAR, Inc. All Rights Reserved</p>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+    <script src="../js/nav.js"></script>
+    <script type="module" src="./js/order.js"></script>
+  </body>
+</html>

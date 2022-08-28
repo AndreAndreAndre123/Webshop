@@ -1,0 +1,252 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+// Font-style options
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Roboto&family=Teko:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: $main-font-family;
+}
+main {
+  margin-top: 100px;
+}
+
+.hidden {
+  display: none;
+}
+.header {
+  @include flex(space-between, center);
+  box-shadow: 0 5px 20px rgba(57, 63, 72, 0.3);
+  position: fixed;
+  top: 0;
+  background: white;
+  width: 100%;
+  padding: 20px 10px;
+  min-height: 110px;
+
+  .logo {
+    position: relative;
+    top: 10px;
+    left: 12px;
+    z-index: 100;
+  }
+}
+
+// Dropdown meny
+.navigation-icons {
+  position: fixed;
+  z-index: 100;
+  top: 2rem;
+  right: 1rem;
+  .cart {
+    position: relative;
+    margin-right: 1rem;
+    font-size: 1.7rem;
+    color: black;
+  }
+  .cart:after {
+    position: absolute;
+    content: attr(data-count);
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    font-size: 12px;
+    line-height: 25px;
+    top: -20px;
+    right: -14px;
+    text-align: center;
+    background-color: rgb(245, 184, 184);
+    z-index: 20;
+  }
+}
+.hamburger {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: white;
+
+  .close-icon {
+    display: none;
+  }
+  .menu-icon,
+  .close-icon {
+    font-size: 3rem;
+  }
+}
+
+.menu-hamburger {
+  position: fixed;
+  text-align: center;
+  top: 12%;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  color: white;
+  background: white;
+  list-style: none;
+  min-height: 430px;
+
+  .menu-item {
+    display: block;
+    color: black;
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding-bottom: 10px;
+    margin: 30px auto;
+    max-width: 90px;
+    &:hover {
+      border-bottom: 3px solid #89a3b3;
+    }
+  }
+  .nav-btn {
+    display: block;
+    height: 50px;
+    border-radius: 30px;
+    max-width: 300px;
+    font-size: 20px;
+    border: 1px solid $border-color-btn;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    @include list-style;
+  }
+  .login-button,
+  .logout-button {
+    @include input-color-theme(#ecffde, black, #daf3c8, #f4ffec);
+    background: $login-btn-color;
+    border: 1px solid $border-color-btn;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 300px;
+    font-family: inherit;
+  }
+  .logout-button {
+    background: #ffd6aa;
+    border: 1px solid rgb(241, 161, 76);
+    &:hover {
+      background: rgb(233, 175, 113);
+    }
+  }
+  .register-button {
+    @include input-color-theme(#89a3b3, white, #708592, #a3becf);
+    background: $register-btn-color;
+    border: 1px solid $register-border-color;
+    color: white;
+  }
+  //styling för länk till profil i hamburgermenyn
+  a {
+    @include list-style;
+    color: black;
+  }
+}
+
+/* .index-main {
+  height: 50vh;
+} */
+
+.footer {
+  @include flex(space-between, center, column);
+  padding: 10px;
+  height: 300px;
+  background-color: #faf4f4;
+}
+.social-media-icons {
+  @include flex(center, center, row);
+  font-size: 30px;
+  gap: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.footer-links {
+  @include flex(space-between, center);
+  width: 80%;
+}
+.footer-link-wrapper {
+  @include flex(space-between, center, column);
+  line-height: 2em;
+}
+ul {
+  @include list-style;
+}
+
+@media (min-width: $breakpointMedium) {
+  .header {
+    height: 120px;
+    // Test: Lägga till en cirkel med antal varor i, vid klick av köpknapp
+    .cart {
+      position: relative;
+      font-size: 25px;
+    }
+    .cart:after {
+      position: absolute;
+      content: attr(data-count);
+      width: 25px;
+      height: 25px;
+      border-radius: 15px;
+      font-size: 12px;
+      line-height: 25px;
+      top: -20px;
+      right: -14px;
+      text-align: center;
+      background-color: rgb(245, 184, 184);
+      z-index: 20;
+    }
+  }
+  .hero-div {
+    min-height: 450px;
+  }
+  .log-in {
+    display: flex;
+    gap: 10px;
+    li a {
+      @include list-style;
+      color: black;
+    }
+    //styling för logga ut knappen desktop
+    li .logout-button-desktop {
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-family: $main-font-family;
+      font-size: 16px;
+    }
+  }
+  .navigation-icons {
+    visibility: hidden;
+  }
+
+  .menu-hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    height: 100%;
+    font-size: 1.5rem;
+    align-items: flex-end;
+    justify-items: center;
+    margin-bottom: 30px;
+    margin-left: 75px;
+
+    ul {
+      display: flex;
+      gap: 30px;
+      li a {
+        @include list-style;
+        color: black;
+        padding: 0px 10px 10px 10px;
+        &:hover {
+          border-bottom: 4px solid #89a3b3;
+        }
+      }
+    }
+  }
+}

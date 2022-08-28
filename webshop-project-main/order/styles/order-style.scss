@@ -1,0 +1,125 @@
+@import "../../styles/partials/variables";
+@import "../../styles/partials/mixins";
+
+h1 {
+  color: $text-color;
+  font-family: $main-font-family;
+  text-align: center;
+  margin: 180px 0px 50px 0px;
+}
+h2 {
+  color: $text-color;
+  font-family: $main-font-family;
+  margin: 10px 0;
+}
+
+.order-main {
+  .order-description-grp {
+    .order-form-wrapper {
+      @include flex(initial, center, column);
+      @media (min-width: $breakpointMedium) {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+
+      .order-form {
+        @include flex(initial, center, column);
+        ul {
+          li {
+            .input-wrapper {
+              @include flex(initial, center, column);
+
+              label {
+                margin-left: 20px;
+                align-self: flex-start;
+              }
+              .order-textarea {
+                display: block;
+                border: 1px solid #707070;
+                border-radius: 15px;
+                height: 100px;
+                max-width: 300px;
+                font-size: 30px;
+                padding: 0 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .summary-wrapper {
+    @include flex(initial, flex-start, column);
+    .product-list-descriptions {
+      @include flex(initial, flex-start, column);
+      .article-wrapper {
+        margin: 2px;
+        .article {
+          @include flex(initial, center, column);
+          color: $text-color;
+          margin-top: 20px;
+          font-family: $main-font-family;
+          max-width: 400px;
+          @media (min-width: $breakpointMedium) {
+            flex-direction: row;
+          }
+          .article-img {
+            width: 160px;
+            height: 160px;
+            margin: 10px;
+          }
+          .article-info-wrapper {
+            @include flex(space-around, initial, column);
+            margin-left: 10px;
+            max-width: 200px;
+            h3 {
+              margin: 5px 0;
+              align-self: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .price-button-row {
+    display: flex;
+    justify-content: center;
+  }
+  .price-and-btn-wrapper {
+    @include flex(initial, center, column);
+    height: 150px;
+    width: 80%;
+    margin-top: 20px;
+    border-top: 1px solid black;
+    gap: 30px;
+
+    @media (min-width: $breakpointMedium) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    justify-content: space-evenly;
+    .total-price-display {
+      font-family: $main-font-family;
+    }
+  }
+  .receipt-and-total-wrapper {
+    @include flex(initial, center, column);
+    .receipt-wrapper {
+      @include flex(initial, center, column-reverse);
+      width: 100%;
+      @media (min-width: $breakpointMedium) {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+      .user-info-wrapper {
+        @include flex(initial, center, column);
+        font-family: $main-font-family;
+        .user-info {
+          font-family: $main-font-family;
+        }
+      }
+    }
+  }
+}
